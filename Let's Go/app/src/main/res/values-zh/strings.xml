@@ -1,0 +1,80 @@
+<resources>
+    <!--log in activity-->
+    <string name="app_name">一起出发吧</string>
+    <string name="login">登录: </string>
+    <string name="login_info">用户名或邮箱</string>
+    <string name="password">密码:</string>
+    <string name="enter_pwd">输入你的密码</string>
+    <string name="button_login">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;登录&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="button_signup">注册</string>
+    <string name="button_forget_pwd">忘记密码?</string>
+    <string name="login_succeed">Log in Succeed!</string>
+    <string name="login_failed">Log in failed</string>
+
+    <!--sign up activity-->
+    <string name="signup">注册</string>
+    <string name="signup_name">用户名</string>
+    <string name="enter_signup_name">创建用户名 (必须)</string>
+    <string name="signup_email">邮箱</string>
+    <string name="enter_signup_email">邮箱 (必须)</string>
+    <string name="signup_phone">手机</string>
+    <string name="enter_signup_phone">手机号</string>
+    <string name="signup_pwd">密码</string>
+    <string name="enter_signup_pwd">创建密码 (必须)</string>
+    <string name="signup_add">地址</string>
+    <string name="enter_signup_add">地址</string>
+    <string name="signup_city">城市</string>
+    <string name="enter_signup_city">城市</string>
+    <string name="signup_state">州</string>
+    <string name="enter_signup_state">州</string>
+    <string name="signup_zip">邮编</string>
+    <string name="enter_signup_zip">邮编</string>
+    <string name="signup_failed">用户名已被注册，请选择新名字</string>
+    <string name="signup_succeed">注册成功</string>
+
+    <!--&lt;!&ndash;forget password page&ndash;&gt;-->
+    <!--<string name="pwd_page">Password Reset</string>-->
+    <!--<string name="pwd_username">User Name</string>-->
+    <!--<string name="pwd_email">Email Address</string>-->
+    <!--<string name="pwd_continue">Continue</string>-->
+
+    <!--show team info page-->
+    <string name="show_info_page">团队信息</string>
+    <string name="user_name">用户名: </string>
+    <string name="team_category">团体活动: </string>
+    <string name="time">时间: </string>
+    <string name="loc">地址: </string>
+    <string name="need_member">需要 </string>
+    <string name="num_member">队员.</string>
+    <string name="colon">:</string>
+    <string name="slash">.</string>
+    <string name="button_join">加入</string>
+    <string name="button_delete">删除</string>
+    <string name="button_update">更新</string>
+
+    <!--user's selection page-->
+    <string name="choice1">创建自己的团队</string>
+    <!--<string name="choice2">Jion an exist team</string>-->
+    <string name="swtich_account">转换账号</string>
+    <!--<string name="sign_out">Sign Out</string>-->
+
+    <!--create a new team-->
+    <string name="create_a_new_team_page">创建团队</string>
+    <string name="button_create">创建</string>
+    <string name="enter_category">团队种类</string>
+    <string name="enter_year">年</string>
+    <string name="enter_month">月</string>
+    <string name="enter_day">日</string>
+    <string name="enter_hour">小时</string>
+    <string name="enter_minute">分钟</string>
+    <string name="clock">(24小时制)</string>
+    <string name="choose_loc">选择你的方位</string>
+    <string name="enter_team_member">多少</string>
+    <string name="title_activity_maps">地图</string>
+
+    <!--update dialog-->
+    <string name="update_title">更新团队信息</string>
+    <string name="update_button">更新</string>
+    <string name="update_back">返回团队信息</string>
+
+</resources>

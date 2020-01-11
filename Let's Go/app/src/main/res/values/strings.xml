@@ -1,0 +1,80 @@
+<resources>
+    <!--log in activity-->
+    <string name="app_name">Let\'s Go</string>
+    <string name="login">Log In: </string>
+    <string name="login_info">username/email</string>
+    <string name="password">Password:</string>
+    <string name="enter_pwd">Enter Your Password</string>
+    <string name="button_login">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Log In&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="button_signup">Sign Up</string>
+    <string name="button_forget_pwd">Forget Password?</string>
+    <string name="login_succeed">Log in Succeed!</string>
+    <string name="login_failed">Log in failed!</string>
+
+    <!--sign up activity-->
+    <string name="signup">Sign Up</string>
+    <string name="signup_name">Name</string>
+    <string name="enter_signup_name">Create username (Required)</string>
+    <string name="signup_email">Email</string>
+    <string name="enter_signup_email">Your email (Required)</string>
+    <string name="signup_phone">Phone</string>
+    <string name="enter_signup_phone">Your phone number</string>
+    <string name="signup_pwd">Password</string>
+    <string name="enter_signup_pwd">Create password (Required)</string>
+    <string name="signup_add">Address</string>
+    <string name="enter_signup_add">Enter address</string>
+    <string name="signup_city">City</string>
+    <string name="enter_signup_city">Enter city</string>
+    <string name="signup_state">State</string>
+    <string name="enter_signup_state">Enter state</string>
+    <string name="signup_zip">Zip</string>
+    <string name="enter_signup_zip">Enter zip code</string>
+    <string name="signup_failed">User name already exists. Please choose a new name.</string>
+    <string name="signup_succeed">Sign up Succeed!</string>
+
+    <!--&lt;!&ndash;forget password page&ndash;&gt;-->
+    <!--<string name="pwd_page">Password Reset</string>-->
+    <!--<string name="pwd_username">User Name</string>-->
+    <!--<string name="pwd_email">Email Address</string>-->
+    <!--<string name="pwd_continue">Continue</string>-->
+
+    <!--user's selection page-->
+    <string name="choice1">Create a new team</string>
+    <!--<string name="choice2">Jion an exist team</string>-->
+    <string name="swtich_account">Swith Account</string>
+
+    <!--show info dialog-->
+    <string name="show_info_page">View Team Info</string>
+    <string name="user_name">User Name: </string>
+    <string name="team_category">Team Category: </string>
+    <string name="time">Time: </string>
+    <string name="loc">Location: </string>
+    <string name="need_member">Need&#160;</string>
+    <string name="num_member">&#160;member(s).</string>
+    <string name="colon">:</string>
+    <string name="slash">/</string>
+    <string name="button_join">Join</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_update">Update</string>
+
+
+    <!--create a new team dialog-->
+    <string name="create_a_new_team_page">Create your team</string>
+    <string name="button_create">Create</string>
+    <string name="enter_category">Enter team\'s category</string>
+    <string name="enter_year">y</string>
+    <string name="enter_month">m</string>
+    <string name="enter_day">d</string>
+    <string name="enter_hour">h</string>
+    <string name="enter_minute">m</string>
+    <string name="clock">(24-hour)</string>
+    <string name="choose_loc">Choose your location</string>
+    <string name="enter_team_member">how many</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--update dialog-->
+    <string name="update_title">Update Team Info</string>
+    <string name="update_button">Update</string>
+    <string name="update_back">Back to Team Info</string>
+
+</resources>

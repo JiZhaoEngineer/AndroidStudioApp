@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewShowPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSize16"
+        android:gravity="center"
+        android:text="@string/show_info_page"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize32"
+        android:textStyle="italic|bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginSize5"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/textViewShowPage" />
+
+    <TextView
+        android:id="@+id/textViewShowUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSize40"
+        android:padding="4dp"
+        android:text="@string/user_name"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/textViewShowUserName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewShowUserName"
+        app:layout_constraintLeft_toRightOf="@+id/textViewShowUserName" />
+
+    <TextView
+        android:id="@+id/textViewShowEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        android:text="@string/signup_email"
+        app:layout_constraintTop_toBottomOf="@+id/textViewShowUserName"
+        app:layout_constraintRight_toRightOf="@id/textViewShowUserName"/>
+
+    <TextView
+        android:id="@+id/textViewShowEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewShowEmail"
+        app:layout_constraintLeft_toRightOf="@id/textViewShowEmail"/>
+
+
+    <TextView
+        android:id="@+id/textViewShowCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:text="@string/team_category"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintRight_toRightOf="@+id/textViewShowUserName"
+        app:layout_constraintTop_toBottomOf="@id/textViewShowEmail" />
+
+    <EditText
+        android:id="@+id/editTextShowCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewShowCategory"
+        app:layout_constraintLeft_toRightOf="@+id/textViewShowCategory" />
+
+    <TextView
+        android:id="@+id/textViewShowTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:text="@string/time"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintRight_toRightOf="@id/textViewShowUserName"
+        app:layout_constraintTop_toBottomOf="@id/textViewShowCategory" />
+
+    <EditText
+        android:id="@+id/editTextShowHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewShowTime"
+        app:layout_constraintLeft_toRightOf="@+id/textViewShowTime" />
+
+    <TextView
+        android:id="@+id/textViewShowColon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:text="@string/colon"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewShowTime"
+        app:layout_constraintLeft_toRightOf="@id/editTextShowHour" />
+
+    <EditText
+        android:id="@+id/editTextShowMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewShowColon"
+        app:layout_constraintLeft_toRightOf="@+id/textViewShowColon" />
+
+    <TextView
+        android:id="@+id/textViewShowLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:text="@string/loc"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintRight_toRightOf="@id/textViewShowUserName"
+        app:layout_constraintTop_toBottomOf="@id/textViewShowTime" />
+
+    <EditText
+        android:id="@+id/editTextShowLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewShowLoc"
+        app:layout_constraintLeft_toRightOf="@+id/textViewShowLoc" />
+
+
+    <TextView
+        android:id="@+id/textViewShowNeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:text="@string/need_member"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintRight_toRightOf="@id/textViewShowUserName"
+        app:layout_constraintTop_toBottomOf="@id/textViewShowLoc" />
+
+    <EditText
+        android:id="@+id/editTextShowNumOfMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewShowNeed"
+        app:layout_constraintLeft_toRightOf="@+id/textViewShowLoc" />
+
+    <TextView
+        android:id="@+id/textViewShowTeamMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:text="@string/num_member"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewShowNeed"
+        app:layout_constraintLeft_toRightOf="@+id/editTextShowNumOfMember" />
+
+    <Button
+        android:id="@+id/buttonShowDelete"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSize16"
+        android:layout_weight="1"
+        android:background="@android:color/background_light"
+        android:text="@string/button_delete"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintTop_toBottomOf="@id/textViewShowNeed" />
+
+
+    <Button
+        android:id="@+id/buttonShowBack"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSize16"
+        android:layout_weight="1"
+        android:background="@android:color/background_light"
+        android:text="@string/update_back"
+        android:textSize="@dimen/textSize20"
+        app:layout_constraintTop_toBottomOf="@id/buttonShowDelete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

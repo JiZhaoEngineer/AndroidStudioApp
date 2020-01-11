@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "65169665748",
+    "firebase_url": "https://jizhaowatchvideo.firebaseio.com",
+    "project_id": "jizhaowatchvideo",
+    "storage_bucket": "jizhaowatchvideo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65169665748:android:0771b0900ea15f3b929541",
+        "android_client_info": {
+          "package_name": "com.example.jizhaowatchvideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65169665748-i8oosrp1tgif11ibodeqs3q3u5cae4no.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jizhaowatchvideo",
+            "certificate_hash": "4ef1849edf9b93eed22d92332a1a2405596e6612"
+          }
+        },
+        {
+          "client_id": "65169665748-6am4fq0jbqskv1h2cbe97ks8vgtcurje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH0LBJ24SUnFjljiqmjqxQRlpr7pxRHio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65169665748-6am4fq0jbqskv1h2cbe97ks8vgtcurje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

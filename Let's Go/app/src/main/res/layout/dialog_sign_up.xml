@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DialogSignUp">
+
+    <TextView
+        android:id="@+id/textViewSignUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_signup"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize32"
+        android:textStyle="italic|bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginSize16"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginSize5"
+        android:background="@android:color/black"
+        android:layout_marginTop="@dimen/marginSize16"/>
+
+    <ScrollView
+        android:id="@+id/scrollViewSignup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewSignupName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/marginSize4"
+                        android:padding="@dimen/marginSize4"
+                        android:textSize="@dimen/textSize20"
+                        android:text="@string/signup_name"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/editTextSignupName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint= "@string/enter_signup_name"
+                        android:textColor="#000"
+                        android:inputType="textPersonName"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textViewSignupEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/marginSize4"
+                        android:padding="@dimen/marginSize4"
+                        android:text="@string/signup_email"
+                        android:textSize="@dimen/textSize20"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/editTextSignupEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint= "@string/enter_signup_email"
+                        android:textColor="#000"
+                        android:inputType="textEmailAddress"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textViewSignupPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/marginSize4"
+                        android:text="@string/signup_phone"
+                        android:textSize="@dimen/textSize20"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/editTextSignupPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint= "@string/enter_signup_phone"
+                        android:textColor="#000"
+                        android:inputType="phone"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textViewSignupPwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/marginSize4"
+                        android:text="@string/signup_pwd"
+                        android:textSize="@dimen/textSize20"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/editTextSignupPwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint= "@string/enter_signup_pwd"
+                        android:textColor="#000"
+                        android:inputType="textPassword"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textViewSignupAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/marginSize4"
+                        android:text="@string/signup_add"
+                        android:textSize="@dimen/textSize20"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/editTextSignupAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint= "@string/enter_signup_add"
+                        android:textColor="#000"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textViewSignupCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/marginSize4"
+                        android:padding="@dimen/marginSize4"
+                        android:text="@string/signup_city"
+                        android:textSize="@dimen/textSize20"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/editTextSignupCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint= "@string/enter_signup_city"
+                        android:textColor="#000"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textViewSignupState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/marginSize4"
+                        android:padding="@dimen/marginSize4"
+                        android:text="@string/signup_state"
+                        android:textSize="@dimen/textSize20"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/editTextSignupState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint= "@string/enter_signup_state"
+                        android:textColor="#000"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textViewSignupZip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/marginSize4"
+                        android:padding="@dimen/marginSize4"
+                        android:text="@string/signup_zip"
+                        android:textSize="@dimen/textSize20"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/editTextSignupZip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint= "@string/enter_signup_zip"
+                        android:textColor="#000"/>
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/buttonSignupSaveInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/marginSize16"
+                        android:text="@string/button_signup"
+                        android:textSize="@dimen/textSize20"
+                        android:background="@android:color/holo_blue_light"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

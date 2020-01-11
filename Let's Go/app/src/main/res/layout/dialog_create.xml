@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewCreateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSize16"
+        android:gravity="center"
+        android:text="@string/create_a_new_team_page"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize32"
+        android:textStyle="italic|bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginSize5"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/textViewCreateTitle"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewCreateTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:text="@string/team_category"
+                android:textColor="#000"
+                android:textSize="@dimen/textSize20"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/editTextCreateCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            android:hint="@string/enter_category"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewCreateTeam"
+            app:layout_constraintLeft_toRightOf="@+id/textViewCreateTeam" />
+
+        <TextView
+            android:id="@+id/textViewCreateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:text="@string/time"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            app:layout_constraintRight_toRightOf="@id/textViewCreateTeam"
+            app:layout_constraintTop_toBottomOf="@id/textViewCreateTeam" />
+
+        <EditText
+            android:id="@+id/editTextCreateYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            android:hint="@string/enter_month"
+            android:inputType="date"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewCreateTime"
+            app:layout_constraintLeft_toRightOf="@+id/textViewCreateTime" />
+
+        <EditText
+            android:id="@+id/editTextCreateMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            android:hint="@string/enter_day"
+            app:layout_constraintBaseline_toBaselineOf="@id/editTextCreateYear"
+            app:layout_constraintLeft_toRightOf="@id/editTextCreateYear" />
+
+        <EditText
+            android:id="@+id/editTextCreateDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            android:hint="@string/enter_year"
+            app:layout_constraintBaseline_toBaselineOf="@id/editTextCreateMonth"
+            app:layout_constraintLeft_toRightOf="@+id/editTextCreateMonth" />
+
+        <EditText
+            android:id="@+id/editTextCreateHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            android:hint="@string/enter_hour"
+            android:inputType="time"
+            app:layout_constraintBaseline_toBaselineOf="@id/editTextCreateDay"
+            app:layout_constraintLeft_toRightOf="@+id/editTextCreateDay" />
+
+        <TextView
+            android:id="@+id/textViewCreateColon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:text="@string/colon"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewCreateTime"
+            app:layout_constraintLeft_toRightOf="@id/editTextCreateHour" />
+
+        <EditText
+            android:id="@+id/editTextCreateMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            android:hint="@string/enter_minute"
+            android:inputType="time"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewCreateColon"
+            app:layout_constraintLeft_toRightOf="@+id/textViewCreateColon" />
+
+
+        <TextView
+            android:id="@+id/textViewCreate24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:text="@string/clock"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewCreateTime"
+            app:layout_constraintLeft_toRightOf="@id/editTextCreateMinute" />
+        <TextView
+            android:id="@+id/textViewCreateLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:text="@string/loc"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            app:layout_constraintRight_toRightOf="@id/textViewCreateTeam"
+            app:layout_constraintTop_toBottomOf="@id/textViewCreateTime" />
+
+        <EditText
+            android:id="@+id/editTextCreateLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            android:hint="@string/choose_loc"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewCreateLoc"
+            app:layout_constraintLeft_toRightOf="@+id/textViewCreateLoc" />
+
+
+        <TextView
+            android:id="@+id/textViewCreateNeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:text="@string/need_member"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            app:layout_constraintRight_toRightOf="@id/textViewCreateTeam"
+            app:layout_constraintTop_toBottomOf="@id/textViewCreateLoc" />
+
+        <EditText
+            android:id="@+id/editTextCreateNumOfMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            android:hint="@string/enter_team_member"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewCreateNeed"
+            app:layout_constraintLeft_toRightOf="@+id/textViewCreateLoc" />
+
+        <TextView
+            android:id="@+id/textViewCreateTeamMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:text="@string/num_member"
+            android:textColor="#000"
+            android:textSize="@dimen/textSize20"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewCreateNeed"
+            app:layout_constraintLeft_toRightOf="@+id/editTextCreateNumOfMember" />
+
+        <Button
+            android:id="@+id/buttonCreate"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginSize16"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:text="@string/button_create"
+            android:textSize="@dimen/textSize20"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCreateNeed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
